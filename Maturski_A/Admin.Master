@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Maturski_A.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>MATURSKI GRUPA A</title>
+      <link rel="stylesheet" href="mojCSS.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="div_100">
+            <div class="div_Left">
+                <ul>
+                    <li><a href="Pregledkorisnika.aspx">Pregled korisnika</a></li>
+                    <li><a href="parametri.aspx">Parametri za upis</a></li>
+                </ul>
+              
+            </div>
+            <div class="div_Right">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div>
+        </div>
+     
+    </form>
+</body>
+</html>
